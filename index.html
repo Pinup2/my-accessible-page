@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PlantMe - Accessible Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+<body>
+  <!-- HEADER & NAV -->
+  <header>
+    <nav aria-label="Main navigation">
+      <!-- Logo or Home Link -->
+      <a href="#" class="flex-center" aria-label="Go to Home">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="14" height="14" rx="1" stroke="#3A6150" stroke-width="2"/>
+            <rect x="1" y="19" width="14" height="14" rx="1" stroke="white" stroke-width="2"/>
+            <rect x="19" y="19" width="14" height="14" rx="1" fill="#3A6150" stroke="#3A6150" stroke-width="2"/>
+            </svg>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="#about-section">About Us</a></li>
+        <li><a href="#contact-section">Contact Us</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Site Map</a></li>
+        <li>
+            <a href="#"> Eng
+              <span aria-hidden="true"> 
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 10L12 15L7 10" stroke="#111111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+              </span>
+            </a>
+          </li>
+      </ul>
+
+      <!-- Search Form -->
+      <form role="search" aria-label="Site search">
+        <label for="search-input" class="visually-hidden">Search this site</label>
+        <input
+          id="search-input"
+          type="search"
+          placeholder="Search this site"
+          aria-label="Search input"
+        />
+        <button type="submit" aria-label="Submit search">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.5 25.5L21.014 21.006L25.5 25.5ZM23.5 15C23.5 17.2543 22.6045 19.4163 21.0104 21.0104C19.4163 22.6045 17.2543 23.5 15 23.5C12.7457 23.5 10.5837 22.6045 8.98959 21.0104C7.39553 19.4163 6.5 17.2543 6.5 15C6.5 12.7457 7.39553 10.5837 8.98959 8.98959C10.5837 7.39553 12.7457 6.5 15 6.5C17.2543 6.5 19.4163 7.39553 21.0104 8.98959C22.6045 10.5837 23.5 12.7457 23.5 15V15Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+        </button>
+      </form>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <h1 id="hero-title">Lorem ipsum dolor sit amet</h1>
+        <h2 id="hero-subtitle">Lorem ipsum dolor sit amet</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt posuere eu risus cursus. 
+          Senectus sed maecenas viverra tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna hendrerit morbi sed gravida.
+          Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        </p>
+        <button type="button" aria-label="Buy Now">
+          Buy Now
+        </button>
+      </div>
+      <!-- Example Hero Image with alt text -->
+      <img
+        src="./assets/img/hero-image.png"
+        alt="Large tropical leaf with a shadowy background"
+      />
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="green-section" aria-labelledby="about-section-heading">
+      <h2 id="about-section-heading" class="visually-hidden">About Us Section</h2>
+    
+      <!-- About Box #1 -->
+      <article class="about-box">
+        <img src="./assets/img/leaf-about-us.png" alt="Leaves or relevant plant" />
+        <div class="about-content">
+          <h3>About Us 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt posuere eu risus cursus.
+            Senectus sed maecenas viverra tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies. 
+            Urna hendrerit morbi sed gravida. Nulla aliquam ac diam amet, sagittis, ut ultricies. 
+            Urna hendrerit morbi sed gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Eleifend tincidunt posuere eu risus cursus.
+          </p>
+          <a href="#" aria-label="Learn more about Us 1">
+            Learn more about →
+          </a>
+        </div>
+      </article>
+    
+      <!-- About Box #2 -->
+      <article class="about-box">
+        <img src="./assets/img/leaf-about-us.png" alt="Leaves or relevant plant" />
+        <div class="about-content">
+          <h3>About Us 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Eleifend tincidunt posuere eu risus cursus. Senectus sed maecenas viverra tempus at. 
+            Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna hendrerit morbi sed gravida. 
+            Nulla aliquam ac diam amet, sagittis, ut ultricies. 
+            Urna hendrerit morbi sed gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Eleifend tincidunt posuere eu risus cursus.
+          </p>
+          <a href="#" aria-label="Learn more about Us 2">
+            Learn more about →
+          </a>
+        </div>
+      </article>
+    </section>
+    <!-- CONTACT SECTION -->
+    <section
+  id="contact-section"
+  class="contact-section"
+  aria-labelledby="contact-heading"
+>
+  <div class="contact-container">
+    <!-- LEFT: Contact Info & Leaf -->
+    <div class="contact-left">
+      <!-- Larger heading -->
+      <h2 id="contact-heading" class="contact-heading">Contact Us</h2>
+      <!-- Paragraph that stays within left container -->
+      <p class="contact-subtext">
+        Fill up the form and our Team will get back to you within 24 hours.
+        We’re happy to hear your message!
+      </p>
+      <div class="contact-details">
+      <ul>
+        <li>Email: example@example.com</li>
+        <li>Phone: +1 234 567 890</li>
+        <li>Location: PlantMe Co., Liv</li>
+      </ul>
+    </div>
+      <div class="social-icons">
+        <img src="icon-facebook.png" alt="Facebook Icon" />
+        <img src="icon-twitter.png" alt="Twitter Icon" />
+        <img src="icon-instagram.png" alt="Instagram Icon" />
+      </div>
+    </div>
+
+    <!-- RIGHT: The Form -->
+    <div class="contact-right">
+      <form class="contact-form" aria-label="Contact form" action="#" method="POST">
+
+        <!-- Row #1: First/Last Name with red asterisks -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="first-name" class="required-field">First Name</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              required
+              aria-required="true"
+            />
+          </div>
+          <div class="form-group">
+            <label for="last-name" class="required-field">Last Name</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              required
+              aria-required="true"
+            />
+          </div>
+        </div>
+
+        <!-- Row #2: Email & Phone -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              aria-required="true"
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone-number">Phone Number</label>
+            <div class="phone-container" id="phone-number">
+              <select name="country-code" aria-label="Country code">
+                <option value="+380">+380</option>
+                <option value="+1">+1</option>
+                <option value="+44">+44</option>
+                <!-- Add other codes as needed -->
+              </select>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="00 000 00 00"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Roles (round checkboxes) -->
+        <fieldset class="form-row-checkboxes">
+          <label>
+            <input type="checkbox" name="role" value="ui-dev" />
+            UI Developer
+          </label>
+          <label>
+            <input type="checkbox" name="role" value="ux-designer" />
+            UI/UX Designer
+          </label>
+          <label>
+            <input type="checkbox" name="role" value="accessibility-expert" />
+            Accessibility Expert
+          </label>
+          <label>
+            <input type="checkbox" name="role" value="qa-engineer" />
+            QA Engineer
+          </label>
+          <label>
+            <input type="checkbox" name="role" value="other" />
+            Other
+          </label>
+        </fieldset>
+
+        <!-- Message textarea (full width) -->
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <!-- Accept Terms: 2 checkboxes side by side -->
+        <div class="form-row">
+          <label>
+            <input type="checkbox" name="accept-terms" class="terms-checkbox" required />
+            Accept the Terms
+          </label>
+          <label>
+            <input type="checkbox" name="accept-terms2" class="terms-checkbox" required />
+            Accept the Terms 2
+          </label>
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit" aria-label="Send your message">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-section">
+    <!-- Top part of footer with three columns -->
+    <div class="footer-top">
+      <!-- Left column: PlantMe, subscribe text, and form -->
+      <div class="footer-col">
+        <h2>PlantMe</h2>
+        <p>Subscribe and be the first to know about our news and promotions.</p>
+        <form aria-label="Subscription form">
+          <label for="subscribe-email" class="visually-hidden">
+            Enter your email
+          </label>
+          <input
+            type="email"
+            id="subscribe-email"
+            name="subscribe-email"
+            placeholder="example@gmail.com"
+          />
+          <button type="submit" aria-label="Subscribe to newsletter">
+            Subscribe
+          </button>
+        </form>
+      </div>
+  
+      <!-- Middle column: links -->
+      <div class="footer-col">
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Site Map</a></li>
+        </ul>
+      </div>
+  
+      <!-- Right column: contact info + payment icons -->
+      <div class="footer-col">
+        <h3>Contacts</h3>
+        <p>+38 063 070 2021</p>
+        <p>
+          <a href="mailto:plantme.store@gmail.com">plantme.store@gmail.com</a>
+        </p>
+        <div class="payment-icons">
+          <img src="./assets/img/mastercard.png" alt="Mastercard" />
+          <img src="./assets/img/visa-card.png" alt="Visa" />
+        </div>
+      </div>
+    </div>
+  
+    <!-- Bottom row -->
+    <div class="footer-bottom">
+      <p>© 2025 PlantMe, All Rights Reserved</p>
+      <p class="footer-info">
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Service</a> |
+        <a href="#">Language</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
